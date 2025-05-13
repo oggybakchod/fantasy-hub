@@ -1,6 +1,5 @@
-
 body {
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     background: #111;
     color: #fff;
     margin: 0;
@@ -24,6 +23,12 @@ main {
     border-radius: 10px;
     width: 300px;
     text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.creator-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }
 .creator-card img {
     width: 100%;
@@ -37,4 +42,15 @@ main {
     text-decoration: none;
     border-radius: 5px;
     margin-top: 1em;
+    transition: background 0.3s ease;
+}
+.button:hover {
+    background: #ff2060;
+}
+@media (min-width: 768px) {
+    main {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
 }
